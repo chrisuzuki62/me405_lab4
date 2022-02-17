@@ -1,15 +1,15 @@
 '''!
-    @file       main.py
-    @brief      The main script on the microcontroller board to print out step response using a timer callback.
-    @details    This file is stored on the microcontroller. There is blocking code that waits for a serial port
-                input. When something is written through the serial port, the input pin connecting to the RC
-                circuit is set to high (5V) for about two seconds and then sets it back to low. Meanwhile, there
-                is a timer interupt that runs at 1000Hz collecting the ADC value and storing it in a queue. The
-                data from the queue will then be printed out through the serial port after the step response.
-    @author Damond Li
-    @author Chris Or
-    @author Chris Suzuki
-    @date 1/25/22
+@file       main.py
+@brief      The main script on the microcontroller board to print out step response using a timer callback.
+@details    This file is stored on the microcontroller. There is blocking code that waits for a serial port
+            input. When something is written through the serial port, the input pin connecting to the RC
+            circuit is set to high (5V) for about two seconds and then sets it back to low. Meanwhile, there
+            is a timer interupt that runs at 1000Hz collecting the ADC value and storing it in a queue. The
+            data from the queue will then be printed out through the serial port after the step response.
+@author Damond Li
+@author Chris Or
+@author Chris Suzuki
+@date 10-Feb-2022
 '''
 import pyb
 import time
