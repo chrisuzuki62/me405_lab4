@@ -67,7 +67,6 @@ for idx in data:
     runs += 1
 
 # Plot the resulting data
-
 fig = plt.figure()
 
 # Set the x and y tick ranges for the axes
